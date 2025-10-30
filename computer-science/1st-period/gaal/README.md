@@ -7,3 +7,12 @@ UM CURSO DE GEOMETRIA ANAL´ITICA E ´ALGEBRA LINEAR - Reginaldo J. Santos
 
 Exercises:
 	Boldrini Book: Ex 1.4
+
+Prova 1: 25.0
+Lista 1: 5.0
+
+Prova 2: 
+Lista 2: 
+
+Prova 3:
+Lista 3:
