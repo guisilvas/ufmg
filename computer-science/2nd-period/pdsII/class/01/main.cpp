@@ -5,6 +5,11 @@
 
 using namespace std;
 
+void menu()
+{
+    cout << "Programming and Development Software" << endl;
+}
+
 int magnitude(int x)
 {
     string s = to_string(x);
@@ -20,6 +25,7 @@ int* factor(int x)
 int main()
 {
     int num = 0;
+    menu();
     cout << "Enter a value: ";
     cin >> num;
     int* ptr = factor(num);
