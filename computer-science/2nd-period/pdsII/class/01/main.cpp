@@ -5,9 +5,13 @@
 
 using namespace std;
 
-void menu()
+string menu()
 {
+    string name;
     cout << "Programming and Development Software" << endl;
+    cout << "Enter your name: ";
+    cin >> name;
+    return name;
 }
 
 int magnitude(int x)
@@ -24,8 +28,8 @@ int* factor(int x)
 
 int main()
 {
+    string name = menu();
     int num = 0;
-    menu();
     cout << "Enter a value: ";
     cin >> num;
     int* ptr = factor(num);
