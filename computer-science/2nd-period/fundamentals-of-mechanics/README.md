@@ -14,4 +14,7 @@ Editora LTC. 2004.
 PDF das aulas Eu disponibilizo no Moodle o PDF da aula, isto pode servir de referência para o seu estudo. Atenção! os PDFs das aulas não são suficientes para o seu estudo, utilize o livro-texto de referência para
 o seu estudo principal.
 
+## Complementary courses:
+- [Física 1(Fundamentos de Mecânica)](https://youtube.com/playlist?list=PLptGVz3Mchw5hN0FeHlnLwasWC5H2vgCG&si=b7TyJMtC6BgRny5W)
 
+-[Halliday e Resnick - Vol.1 - Mecânica](https://youtube.com/playlist?list=PLUFcRbu9t-v4Wfbu1Tsf-Hxg5Wc9hoSoz&si=mOR7wNoMg26uJoud)
