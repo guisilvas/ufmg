@@ -4,20 +4,23 @@
 
 using namespace std;
 
-void words(string s)
+int main()
 {
+    string s = "Hello Her Einstein.";
     string str;
     strigstream res(s);
     while(res>>str)
     {
         cout<<str<<endl;
     }
-    return;
+    return 0;
 }
 
+/*
 int main()
 {
     string s = "Hello Her Einstein!";
     words(s);
     return 0;
 }
+*/

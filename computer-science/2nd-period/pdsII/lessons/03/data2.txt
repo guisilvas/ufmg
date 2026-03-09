@@ -1,0 +1,3 @@
+[Isaac Newton;25;United Kingdom;Mathematician/Physicist;]
+[Albert Einstein;22;Germany;Physicist;]
+[James Maxwell;30;Scotland;Mathematician/Physicist;]
