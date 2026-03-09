@@ -1,65 +1,8 @@
 #include <string>
 #include <fstream>
 #include <iostream>
-#include <cmath>
 
 using namespace std;
-
-void play(string key)
-{
-    string attempt, answer = "*****";
-    cin>>attempt;
-    attempt = to_upper(attempt);
-    
-    for(int i=0;i<5;i++)
-    {
-        if(attempt==key)
-        {
-            cout<<"GANHOU!"<<endl;
-            break;
-        }
-        else
-        {
-            for(int j=0;j<5;j++)
-            {
-                for(int k=0;k<5;k++)
-                {
-                    if(attempt[j]==key[k])
-                    {
-                        if(j==k)
-                        {
-                            answer[j] = to_upper(attempt[j]);
-                        }
-                        else
-                        {
-                            answer[j] = to_lower(attempt[j]);
-                        }
-                    }
-                }
-            }
-        }
-        /*
-        for(int m=0;m<5;m++)
-        {
-            if(asnwer[m]==0)
-            {
-                res = res + "*";
-            }
-            else if(answer[m]==1)
-            {
-                res = res + tolower(attempt[m]);
-            }
-            else
-            {
-                res = res + toupper(attempt[m]);
-            }
-            cout<<answer[m];
-        }
-        */
-        cout<<answer<<endl;
-    }
-    return;
-}
 
 string to_upper(string s)
 {
@@ -83,6 +26,55 @@ string to_lower(string s)
         }
     }
     return s;
+}
+
+void play(string key)
+{
+    string attempt, answer, wrong;
+    
+    for(int i=0;i<5;i++) //Player attempts
+    {
+        answer = "*****"; //Tries
+        cin>>attempt;
+        attempt = to_upper(attempt);
+
+        for(int j=0;j<5;j++) //Compare attempt char to eat key char
+        {
+            for(int k=0;k<5;k++)
+            {
+                if(attempt[j]==key[k])
+                {
+                    if(j==k)
+                    {
+                        answer[j] = attempt[j];
+                    }
+                    else
+                    {
+                        answer[j] = (char)tolower(attempt[j]);
+                    }
+                }
+            }
+             
+            if(answer[j]=='*') //Add wrong letter
+            {
+                wrong = wrong + attempt[j];
+            }
+        }
+        
+        cout<<answer<<" ("<<wrong<<")"<<endl; 
+        if(attempt==key)
+        {
+            cout<<"GANHOU!"<<endl;
+            break;
+        }
+    }
+    
+    if(attempt!=key)
+    {
+        cout<<"PERDEU! "<<key<<endl;
+    }
+    
+    return;
 }
 
 string word(int n)
