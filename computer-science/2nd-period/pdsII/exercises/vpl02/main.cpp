@@ -31,6 +31,7 @@ string to_lower(string s)
 void play(string key)
 {
     string attempt, answer, wrong;
+    int ver = 0;
     
     for(int i=0;i<5;i++) //Player attempts
     {
@@ -57,8 +58,19 @@ void play(string key)
              
             if(answer[j]=='*') //Add wrong letter
             {
-                wrong = wrong + attempt[j];
+                for(int k=0;k<wrong.length();k++)
+                {
+                    if(attempt[j]==wrong[k])
+                    {
+                        ver = ver + 1;
+                    }
+                }
+                if(ver==0)
+                {
+                    wrong = wrong + attempt[j];
+                }
             }
+            ver = 0;
         }
         
         cout<<answer<<" ("<<wrong<<")"<<endl; 
