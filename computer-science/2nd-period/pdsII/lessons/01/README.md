@@ -1,4 +1,4 @@
-Class 01 - 2026/03/03 - 14:55h
+Lesson 01 - 2026/03/03
 
 Extension file:
 .cpp
