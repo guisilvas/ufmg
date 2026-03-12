@@ -39,7 +39,7 @@ void play(string key)
         cin>>attempt;
         attempt = to_upper(attempt);
 
-        for(int j=0;j<5;j++) //Compare attempt char to eat key char
+        for(int j=0;j<5;j++) //Compare attempt char to each key char
         {
             for(int k=0;k<5;k++)
             {
@@ -58,7 +58,8 @@ void play(string key)
              
             if(answer[j]=='*') //Add wrong letter
             {
-                for(int k=0;k<wrong.length();k++)
+                int size = wrong.length();
+                for(int k=0;k<size;k++)
                 {
                     if(attempt[j]==wrong[k])
                     {
@@ -91,7 +92,7 @@ void play(string key)
 
 string word(int n)
 {
-    string key;
+    string key = "";
     ifstream in("palavras.txt",fstream::in);
     for(int i=0;i<=n;i++)
     {
@@ -103,10 +104,10 @@ string word(int n)
 
 int main()
 {
-    int n;
+    int n = 0;
     cin>>n;
-
-    string key;    
+    
+    string key;
     key = word(n);
     
     play(key);
