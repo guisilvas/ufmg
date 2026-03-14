@@ -4,22 +4,21 @@
 //    - A terceira deve ser passada por valor
 //   A função deverá incrementar em 1 o valor das 3 variáveis e retornar.
 
-int (int x, int, y, int z) {
-    return x+1, y+1, z+1;
+int (int &x, int* y, int z) {
+    return &x+1, *y+1, z+1;
 }
 
 int main() {
 
     // 1) Declare uma variável do tipo inteiro e preencha com o valor informado na entrada
-    int x1 = 0, n = 0;
-    cin>>n;
-    x1 = n;
+    int x1 = 0;
+    cin>>x1;
     
     // 2) Declare um ponteiro para inteiros e inicialize com valor nulo
-    int *p;
+    int *p = null;
 
     // 3) Declare um vetor de inteiros com tamanho informado na entrada e preencha com dados lidos da entrada
-    int v[n];    
+    int v[n];
 
     // 4) Imprima o ENDEREÇO da variável declarada em (1)
     
